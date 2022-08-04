@@ -200,11 +200,19 @@ body .container #time #minute::after {
 
 @-webkit-keyframes animate {
   0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
   }
 }
 
 @keyframes animate {
   0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
