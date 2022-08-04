@@ -69,17 +69,29 @@ body {
           height: 50%;
           background-color: #f00;
           background-color: var(--clr);
-          // it can be clr or any other name must it must correspond with the one in the html
-          
+          // it can be clr or any other name but it must correspond with the one in the html
+          opacity: 0.75;
+          transform-origin: bottom;
+          transform: scaleY(0.5);
+        }
+      }
+      .circle:nth-child(1){
+        i{
+            width: 2px;
+
         }
       }
       .second {
         width: 240px;
         height: 240px;
+    z-index: 9;
       }
       .third {
         width: 180px;
         height: 180px;
+          i{
+            width: 6px;
+        }
       }
     }
     .clock::before {

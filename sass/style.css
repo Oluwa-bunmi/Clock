@@ -99,16 +99,30 @@ body .container .clock .circle i {
   height: 50%;
   background-color: #f00;
   background-color: var(--clr);
+  opacity: 0.75;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+}
+
+body .container .clock .circle:nth-child(1) i {
+  width: 2px;
 }
 
 body .container .clock .second {
   width: 240px;
   height: 240px;
+  z-index: 9;
 }
 
 body .container .clock .third {
   width: 180px;
   height: 180px;
+}
+
+body .container .clock .third i {
+  width: 6px;
 }
 
 body .container .clock::before {
