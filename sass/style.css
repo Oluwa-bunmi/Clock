@@ -91,6 +91,7 @@ body .container .clock .circle {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  z-index: 10;
 }
 
 body .container .clock .circle i {
@@ -119,10 +120,19 @@ body .container .clock .second {
 body .container .clock .third {
   width: 180px;
   height: 180px;
+  z-index: 8;
 }
 
-body .container .clock .third i {
-  width: 6px;
+body .container .clock .circle::before {
+  content: "";
+  position: absolute;
+  top: -8.5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--clr);
+  -webkit-box-shadow: 0 0 20px var(--clr), 0 0 60px var(--clr);
+          box-shadow: 0 0 20px var(--clr), 0 0 60px var(--clr);
 }
 
 body .container .clock::before {
@@ -133,5 +143,6 @@ body .container .clock::before {
   background-color: #2f363e;
   border-radius: 50%;
   border: 3px solid #fff;
+  z-index: 100000;
 }
 /*# sourceMappingURL=style.css.map */
