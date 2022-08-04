@@ -98,6 +98,7 @@ body .container .clock .circle i {
   width: 6px;
   height: 50%;
   background-color: #f00;
+  background-color: var(--clr);
 }
 
 body .container .clock .second {
@@ -117,6 +118,6 @@ body .container .clock::before {
   height: 8px;
   background-color: #2f363e;
   border-radius: 50%;
-  border: 3px solid  #fff;
+  border: 3px solid #fff;
 }
 /*# sourceMappingURL=style.css.map */
