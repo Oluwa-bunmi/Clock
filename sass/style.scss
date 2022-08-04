@@ -55,6 +55,21 @@ body {
             display: inline-block;
         }
         }
+        .circle{
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border: 2px solid rgba(0, 0, 0, 0.25);
+            border-radius: 50%;
+        }
+        .second{
+            width: 240px;
+            height: 240px;
+        }
+        .third{
+            width: 180px;
+            height: 180px;
+        }
     }
     .clock::before{
         content: "";
