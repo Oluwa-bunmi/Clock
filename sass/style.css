@@ -30,6 +30,10 @@ body .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -144,5 +148,11 @@ body .container .clock::before {
   border-radius: 50%;
   border: 3px solid #fff;
   z-index: 100000;
+}
+
+body .container #time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */
