@@ -18,7 +18,7 @@ body {
     border-top-right-radius: 225px;
     box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.75),
       10px 10px 70px rgba(0, 0, 0, 0.25), inset 5px 5px 10px rgba(0, 0, 0, 0.5),
-      inset 5px 5px 20px rgba(0, 0, 0, 0.2),
+      inset 5px 5px 20px rgba(255, 255, 255, 0.2),
       inset -5px -5px 15px rgba(0, 0, 0, 0.75);
     display: flex;
     flex-direction: column;
@@ -77,16 +77,15 @@ body {
           transform: scaleY(0.5);
         }
       }
-      .circle:nth-child(1){
-        i{
-            width: 2px;
-
+      .circle:nth-child(1) {
+        i {
+          width: 2px;
         }
       }
       .second {
         width: 240px;
         height: 240px;
-    z-index: 9;
+        z-index: 9;
       }
       .third {
         width: 180px;
@@ -96,7 +95,7 @@ body {
         //     width: 6px;
         // }
       }
-      .circle::before{
+      .circle::before {
         content: "";
         position: absolute;
         top: -8.5px;
@@ -105,8 +104,6 @@ body {
         border-radius: 50%;
         background-color: var(--clr);
         box-shadow: 0 0 20px var(--clr), 0 0 60px var(--clr);
-
-
       }
     }
     .clock::before {
@@ -119,8 +116,17 @@ body {
       border: 3px solid #fff;
       z-index: 100000;
     }
-    #time{
-        display: flex;
+    #time {
+      display: flex;
+      margin-bottom: 40px;
+      padding: 10px 20px;
+      font-size: 2em;
+      font-weight: 600;
+      border: 2px solid rgba(0, 0, 0, 0.5);
+      border-radius: 40px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5),
+        inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+        inset -5px -5px 15px rgba(0, 0, 0, 0.75);
     }
   }
 }
