@@ -174,11 +174,37 @@ body .container #time div {
 
 body .container #time div:last-child {
   font-size: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
 }
 
-body .container #time #hour::after, body .container #time #minute::after {
+body .container #time #hour::after,
+body .container #time #minute::after {
   content: ":";
   position: absolute;
   right: -4px;
+}
+
+body .container #time #minute::after {
+  -webkit-animation: animate 1s steps(1) infinite;
+          animation: animate 1s steps(1) infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+  }
+}
+
+@keyframes animate {
+  0% {
+  }
 }
 /*# sourceMappingURL=style.css.map */

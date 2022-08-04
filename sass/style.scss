@@ -134,14 +134,26 @@ body {
         font-weight: 500;
         color: var(--clr);
       }
-      div:last-child{
+      div:last-child {
         font-size: 0.5em;
-        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
       }
-      #hour::after, #minute::after {
+      #hour::after,
+      #minute::after {
         content: ":";
         position: absolute;
         right: -4px;
+      }
+      #minute::after {
+        animation: animate 1s steps(1) infinite;
+      }
+      @keyframes animate {
+        0%{
+            
+        }
       }
     }
   }
