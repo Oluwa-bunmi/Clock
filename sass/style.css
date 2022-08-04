@@ -58,6 +58,24 @@ body .container .clock {
   margin-bottom: 30px;
 }
 
+body .container .clock span {
+  position: absolute;
+  inset: 20px;
+  color: #fff;
+  text-align: center;
+  -webkit-transform: rotate(calc(30deg * var(--i)));
+          transform: rotate(calc(30deg * var(--i)));
+}
+
+body .container .clock span b {
+  font-size: 2em;
+  opacity: 0.25;
+  font-weight: 600;
+  -webkit-transform: rotate(calc(-30deg * var(--i)));
+          transform: rotate(calc(-30deg * var(--i)));
+  display: inline-block;
+}
+
 body .container .clock::before {
   content: "";
   position: absolute;

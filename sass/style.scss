@@ -41,7 +41,19 @@ body {
         align-items: center;
         margin-bottom: 30px;
         span{
-            
+           position: absolute;
+           inset: 20px; 
+           color: #fff;
+           text-align: center;
+           transform: rotate(calc(30deg * var(--i)));
+        //    360/12 = 30, that generated the calculation above
+        b{
+            font-size: 2em;
+            opacity: 0.25;
+            font-weight: 600;
+            transform: rotate(calc(-30deg * var(--i)));
+            display: inline-block;
+        }
         }
     }
     .clock::before{
