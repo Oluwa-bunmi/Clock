@@ -163,4 +163,22 @@ body .container #time {
   -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), inset 5px 5px 20px rgba(255, 255, 255, 0.2), inset -5px -5px 15px rgba(0, 0, 0, 0.75);
           box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), inset 5px 5px 20px rgba(255, 255, 255, 0.2), inset -5px -5px 15px rgba(0, 0, 0, 0.75);
 }
+
+body .container #time div {
+  position: relative;
+  width: 60px;
+  text-align: center;
+  font-weight: 500;
+  color: var(--clr);
+}
+
+body .container #time div:last-child {
+  font-size: 0.5em;
+}
+
+body .container #time #hour::after, body .container #time #minute::after {
+  content: ":";
+  position: absolute;
+  right: -4px;
+}
 /*# sourceMappingURL=style.css.map */
