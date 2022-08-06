@@ -1,6 +1,6 @@
-let hour = document.getElementById("hr");
-let minute = document.getElementById("min");
-let second = document.getElementById("sec");
+let hour = document.querySelector("#hr");
+let minute = document.querySelector("#min");
+let second = document.querySelector("#sec");
 
 setInterval(() => {
   let day = new Date();
@@ -14,22 +14,29 @@ setInterval(() => {
 });
 
 // Digital clock
-let hrs = document.getElementById("hour");
-let min = document.getElementById("minute");
-let sec = document.getElementById("second");
-let meridian = document.getElementById("meridian");
+setInterval(() => {
+  let hrs = document.getElementById("hour");
+  let min = document.getElementById("minute");
+  let sec = document.getElementById("second");
+  let meridian = document.getElementById("meridian");
 
-let h = new Date().getHours();
-let m = new Date().getMinutes();
-let s = new Date().getSeconds();
+  let h = new Date().getHours();
+  let m = new Date().getMinutes();
+  let s = new Date().getSeconds();
 
-let am = h>=12 ? "PM" : "AM";
+  let am = h >= 12 ? "PM" : "AM";
+  // convert 24hr  clock to 12hr clock
+  if (h > 12) {
+    h = h - 12;
+  }
 
-// add zero before a single digit
-h = (h < 10) ? "0" + h : h;
-m = (m < 10) ? "0" + m : m;
-s = (s < 10) ? "0" + s : s;
+  // add zero before a single digit
+  h = h < 10 ? "0" + h : h;
+  m = m < 10 ? "0" + m : m;
+  s = s < 10 ? "0" + s : s;
 
-hrs.innerHTML = h;
-min.innerHTML = m;
-sec.innerHTML = s;
+  hrs.innerHTML = h;
+  min.innerHTML = m;
+  sec.innerHTML = s;
+  meridian.innerHTML = am;
+});
