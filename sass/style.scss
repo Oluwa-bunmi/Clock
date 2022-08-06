@@ -12,7 +12,7 @@ body {
   .container {
     position: relative;
     background-color: #2f363e;
-    // min-height: 500px;
+   
     border-radius: 20px;
     border-top-left-radius: 225px;
     border-top-right-radius: 225px;
@@ -91,9 +91,7 @@ body {
         width: 180px;
         height: 180px;
         z-index: 8;
-        //   i{
-        //     width: 6px;
-        // }
+       
       }
       .circle::before {
         content: "";
